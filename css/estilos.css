@@ -477,6 +477,14 @@ a {
   padding: 100px;
 }
 
+.titulo_quienes_somos {
+  /* Titulo de pagina de quienes somos*/
+  height: auto;
+  padding: 50px;
+  align-self: center;
+}
+
+
 .titulo,
 .direccion {
   display: flex;
@@ -531,5 +539,43 @@ a {
 @media screen and (max-width: 640px) {
   .formulario {
     width: 80%;
+  }
+}
+
+h4{
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+.container {
+  display: grid;
+  margin: 15px auto ;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+
+.item{
+  width: 80%;
+  margin: 0 auto;
+}
+.texto-card{
+  font-weight: 500;
+  font-size: large;
+  align-self: center;
+}
+@media screen and (max-width: 640px) {
+  .container {
+      grid-template-columns: repeat(1, 5fr);
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1080px) {
+  .container {
+      grid-template-columns: repeat(1,5fr);
   }
 }
